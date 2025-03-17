@@ -1,12 +1,69 @@
-# React + Vite
+# Dashboard de Desempenho Logístico Sustentável
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - Framework JavaScript para construção da interface
+- **Vite** - Ferramenta de build rápida para desenvolvimento moderno
+- **Tailwind CSS** - Framework CSS utilitário para estilização
+- **Recharts** - Biblioteca de gráficos para React
+- **Lucide React** - Biblioteca de ícones
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Dashboard Principal
+
+O dashboard principal apresenta:
+
+- **Cartões de Métricas** - Exibem indicadores-chave de desempenho:
+  - Eficiência Energética
+  - Frotas Monitoradas
+  - Emissões de CO2
+  - Economia de Combustível
+
+- **Gráficos Interativos**:
+  - Gráfico de linha mostrando a evolução das emissões de CO2 ao longo do tempo
+  - Gráfico de pizza ilustrando a distribuição por modo de transporte (Rodoviário, Ferroviário, Marítimo)
+
+- **Filtros de Período** - Permite visualizar dados em diferentes intervalos de tempo (Diário, Semanal, Mensal)
+
+### Componentes Principais
+
+- **Header** - Barra de navegação superior com logo e menu
+- **MetricCard** - Cartões para exibição de métricas individuais
+- **LineChartCard** - Componente de gráfico de linha para visualização de tendências
+- **PieChartCard** - Componente de gráfico de pizza para visualização de distribuição
+- **FilterOptions** - Componente de filtro para seleção de período
+
+## Design Responsivo
+
+O dashboard é totalmente responsivo, adaptando-se a diferentes tamanhos de tela:
+- Layout fluido que se ajusta de desktop a dispositivos móveis
+- Gráficos redimensionáveis
+- Menu adaptativo
+
+## Paleta de Cores
+
+O projeto utiliza uma paleta de cores com foco em sustentabilidade:
+- Verde primário (#007632) - Representa sustentabilidade e meio ambiente
+- Verde secundário (#65B32E) - Complementa o verde primário
+- Verde terciário (#95C230) - Usado para destaques e variações
+
+## Instalação e Execução
+
+```bash
+# Clonar o repositório
+git clone [url-do-repositório]
+
+# Entrar no diretório do projeto
+cd FrontendDeloitte
+
+# Instalar dependências
+npm install
+
+# Iniciar o servidor de desenvolvimento
+npm run dev
+
+```
+
